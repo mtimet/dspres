@@ -19,7 +19,7 @@ def enrich(df):
     df['Month'] = df.Dates.dt.month
     df['DayOfWeek'] = df.Dates.dt.dayofweek
     df['Day'] = df.Dates.dt.day
-   
+    
 %time enrich(train)
 %time enrich(test)
 
